@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private void login(View view){
+    public void login(View view){
         EditText nameEditText = findViewById(R.id.nameEditText);
         EditText passwordEditText = findViewById(R.id.passwordEditText);
         Toast.makeText(this, "User:" + nameEditText.getText().toString()
