@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="158dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/usernameTextView"
+        app:layout_constraintStart_toEndOf="@+id/postImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Thoi gian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postImageView"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImageView" />
+
+    <TextView
+        android:id="@+id/collectionTextView"
+        android:layout_width="166dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Danh muc"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:text="Tieu de bai dang"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postImageView" />
+</android.support.constraint.ConstraintLayout>
